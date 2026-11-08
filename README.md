@@ -1,5 +1,7 @@
 # 彩票数据观察
 
+[GitHub](https://github.com/Andr3Wang/lottery-data-review) · [Gitee](https://gitee.com/Andr3w/lottery-data-review)
+
 一个本地优先的彩票历史数据采集、统计分析与**结构化选号**工具。覆盖中国福利彩票和中国体育彩票的 8 个常见玩法，每天从官方公开接口增量抓取开奖数据，保存到 SQLite，生成下一期参考组合，并通过 FastAPI + Vue 提供只读查询页面。
 
 > **重要说明：彩票每期独立开奖，历史数据不能提高任何一注的中奖概率。**
