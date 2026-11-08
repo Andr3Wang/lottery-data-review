@@ -259,6 +259,7 @@ Lottery/
 ├── data/                       # SQLite 本地数据（不提交）
 ├── logs/                       # 运行日志（不提交）
 ├── reports/                    # 生成报告（不提交）
+├── deploy/                     # systemd / Nginx 部署配置
 ├── tests/
 │   ├── test_core.py
 │   └── test_backtest.py
@@ -395,7 +396,7 @@ un_daily.pyw"" /ST 22:30 /F
 
 ### Linux systemd
 
-建议生产环境使用 `systemd timer`，不要在 Nginx 或 API 进程里跑抓取。
+建议生产环境使用 `systemd timer`，不要在 Nginx 或 API 进程里跑抓取。仓库的 `deploy/` 目录已提供可直接复制的 service、timer 和 Nginx 配置。
 
 `/etc/systemd/system/lottery-daily.service`：
 
