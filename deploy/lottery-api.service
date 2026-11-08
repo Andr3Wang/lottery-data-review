@@ -1,0 +1,19 @@
+[Unit]
+Description=Lottery Data Review API
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/opt/lottery
+Environment=LOTTERY_DB=/opt/lottery/data/lottery.db
+Environment=PYTHONIOENCODING=utf-8
+ExecStart=/opt/lottery/.venv/bin/python -m uvicorn api.main:app --host 127.0.0.1 --port 8000
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

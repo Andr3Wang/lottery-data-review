@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Lottery daily job at 22:30 Asia/Shanghai
+
+[Timer]
+OnCalendar=*-*-* 22:30:00 Asia/Shanghai
+Persistent=true
+RandomizedDelaySec=60
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=Lottery daily fetch and recommendation
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/opt/lottery
+Environment=PYTHONIOENCODING=utf-8
+ExecStart=/opt/lottery/.venv/bin/python /opt/lottery/run_daily.py
