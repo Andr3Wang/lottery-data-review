@@ -1,6 +1,6 @@
 # 彩票数据观察
 
-[GitHub](https://github.com/Andr3Wang/LotteryReview) · [在线页面](http://82.157.181.139:8888)
+[GitHub](https://github.com/Andr3Wang/LotteryReview) · [Gitee 入口](https://gitee.com/Andr3w/LotteryReview) · [在线页面](http://82.157.181.139:8888)
 
 一个本地优先的彩票历史数据采集、统计分析与**结构化选号**工具。覆盖中国福利彩票和中国体育彩票的 8 个常见玩法，每天从官方公开接口增量抓取开奖数据，保存到 SQLite，生成下一期参考组合，并通过 FastAPI + Vue 提供只读查询页面。
 
